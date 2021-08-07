@@ -5,6 +5,9 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use App\Item;
+use App\Purchase;
+use App\Cart;
 
 class User extends Authenticatable
 {
@@ -16,7 +19,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'address', 'email', 'password', 'postalCode', 'telephone',
     ];
 
     /**
@@ -36,4 +39,27 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
+    public function cart()
+    {
+        return $this->belongsToMany(Item::class, 'carts', 'user_id', 'item_id')->withPivot('quantity', 'price')->withTimestamps();
+    }
+    
+    
+    public function add_cart($itemId, $itemPrice)
+    {
+        $this->cart()->attach($itemId, ['quantity' => 1, 'price' => $itemPrice]);
+    }
+    
+    public function del_item($itemIds)
+    {
+        $this->cart()->detach($itemIds);
+        
+        return $this->cart;
+    }
+    
+    public function purchase(){
+        return $this->hasMany(Purchase::class);
+    }
+    
 }
