@@ -2,11 +2,9 @@
 <p>ご注文ありがとうございます。<br>以下が注文情報になります。</p>
 <p>---------------------注文情報---------------------</p>
 <p>※ご注文商品(数量)<p>
-<ul class="list-unstyled">
 @foreach($orders as $order)
-    <li>{{ $order->item_title }}{{ '（'.$order->quantity.'個）' }}</li>
+    <p>{{ $order->item_title }}{{ '（'.$order->quantity.'個）' }}</p>
 @endforeach
-</ul>
 <p>※合計金額</p>
 <p>{{ $orders->sum('totalPrice').'円'.' + 送料（500円）' }}</p>
 <p>※お届け先</p>
