@@ -19,7 +19,7 @@ class ItemsController extends Controller
         header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0");
         header("Pragma: no-cache");
         $data = [];
-        $items = Item::orderBy('updated_at')->paginate(6);
+        $items = Item::orderBy('updated_at', 'desc')->paginate(6);
         $categories = Category::get();
         $data = ['items'=>$items, 'categories'=>$categories];
         return view('welcome', $data);
