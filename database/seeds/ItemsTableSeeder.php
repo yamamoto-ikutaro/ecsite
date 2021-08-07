@@ -16,7 +16,7 @@ class ItemsTableSeeder extends Seeder
             'item_title' => 'test content',
             'content' => 'test content',
             'item_quantity' => 100,
-            'image_url' => 'blx6UjNnpQecx1Vt2kfcMhVe5wFiHohZ8PEFHkqd.jpg',
+            'image_url' => "ulVUDMpoFpJ9xUijOntWdEHlPPoDCJfS1pqvVulB.jpg",
             'price' => '100'
         ]);
         DB::table('items')->insert([
@@ -24,7 +24,7 @@ class ItemsTableSeeder extends Seeder
             'item_title' => 'test content',
             'content' => 'test content',
             'item_quantity' => 100,
-            'image_url' => 'blx6UjNnpQecx1Vt2kfcMhVe5wFiHohZ8PEFHkqd.jpg',
+            'image_url' => "ulVUDMpoFpJ9xUijOntWdEHlPPoDCJfS1pqvVulB.jpg",
             'price' => '100'
         ]);
         DB::table('items')->insert([
@@ -32,7 +32,7 @@ class ItemsTableSeeder extends Seeder
             'item_title' => 'test content',
             'content' => 'test content',
             'item_quantity' => 100,
-            'image_url' => 'blx6UjNnpQecx1Vt2kfcMhVe5wFiHohZ8PEFHkqd.jpg',
+            'image_url' => "ulVUDMpoFpJ9xUijOntWdEHlPPoDCJfS1pqvVulB.jpg",
             'price' => '100'
         ]);
         DB::table('items')->insert([
@@ -40,7 +40,7 @@ class ItemsTableSeeder extends Seeder
             'item_title' => 'test content',
             'content' => 'test content',
             'item_quantity' => 100,
-            'image_url' => 'blx6UjNnpQecx1Vt2kfcMhVe5wFiHohZ8PEFHkqd.jpg',
+            'image_url' => "ulVUDMpoFpJ9xUijOntWdEHlPPoDCJfS1pqvVulB.jpg",
             'price' => '100'
         ]);
         DB::table('items')->insert([
@@ -48,7 +48,7 @@ class ItemsTableSeeder extends Seeder
             'item_title' => 'test content',
             'content' => 'test content',
             'item_quantity' => 100,
-            'image_url' => 'blx6UjNnpQecx1Vt2kfcMhVe5wFiHohZ8PEFHkqd.jpg',
+            'image_url' => "ulVUDMpoFpJ9xUijOntWdEHlPPoDCJfS1pqvVulB.jpg",
             'price' => '100'
         ]);
         DB::table('items')->insert([
@@ -56,7 +56,7 @@ class ItemsTableSeeder extends Seeder
             'item_title' => 'test content',
             'content' => 'test content',
             'item_quantity' => 100,
-            'image_url' => 'blx6UjNnpQecx1Vt2kfcMhVe5wFiHohZ8PEFHkqd.jpg',
+            'image_url' => "ulVUDMpoFpJ9xUijOntWdEHlPPoDCJfS1pqvVulB.jpg",
             'price' => '100'
         ]);
         DB::table('items')->insert([
@@ -64,7 +64,7 @@ class ItemsTableSeeder extends Seeder
             'item_title' => 'test content',
             'content' => 'test content',
             'item_quantity' => 100,
-            'image_url' => 'blx6UjNnpQecx1Vt2kfcMhVe5wFiHohZ8PEFHkqd.jpg',
+            'image_url' => "ulVUDMpoFpJ9xUijOntWdEHlPPoDCJfS1pqvVulB.jpg",
             'price' => '100'
         ]);
         DB::table('items')->insert([
@@ -72,7 +72,7 @@ class ItemsTableSeeder extends Seeder
             'item_title' => 'test content',
             'content' => 'test content',
             'item_quantity' => 100,
-            'image_url' => 'blx6UjNnpQecx1Vt2kfcMhVe5wFiHohZ8PEFHkqd.jpg',
+            'image_url' => "ulVUDMpoFpJ9xUijOntWdEHlPPoDCJfS1pqvVulB.jpg",
             'price' => '100'
         ]);
         DB::table('items')->insert([
@@ -80,7 +80,7 @@ class ItemsTableSeeder extends Seeder
             'item_title' => 'test content',
             'content' => 'test content',
             'item_quantity' => 100,
-            'image_url' => 'blx6UjNnpQecx1Vt2kfcMhVe5wFiHohZ8PEFHkqd.jpg',
+            'image_url' => "ulVUDMpoFpJ9xUijOntWdEHlPPoDCJfS1pqvVulB.jpg",
             'price' => '100'
         ]);
         DB::table('items')->insert([
@@ -88,7 +88,7 @@ class ItemsTableSeeder extends Seeder
             'item_title' => 'test content',
             'content' => 'test content',
             'item_quantity' => 100,
-            'image_url' => 'blx6UjNnpQecx1Vt2kfcMhVe5wFiHohZ8PEFHkqd.jpg',
+            'image_url' => "ulVUDMpoFpJ9xUijOntWdEHlPPoDCJfS1pqvVulB.jpg",
             'price' => '100'
         ]);
     }
