@@ -2,7 +2,7 @@
 <p>ご注文ありがとうございます。<br>以下が注文情報になります。</p>
 <p>---------------------注文情報---------------------</p>
 <p>※ご注文商品(数量)<p>
-<ul>
+<ul class="list-unstyled">
 @foreach($orders as $order)
     <li>{{ $order->item_title }}{{ '（'.$order->quantity.'個）' }}</li>
 @endforeach
