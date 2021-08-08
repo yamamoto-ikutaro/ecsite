@@ -50,6 +50,9 @@
     {!! link_to_route('add_product_screen', '商品の追加', [], ['class'=>'btn btn-primary mb-4']) !!}
     @endif
 @endif
+    <div>
+        {{ $items->links() }}
+    </div>
     <div class="container mb-4">
         <div class="row">
             <div class="col-md-8">
@@ -59,8 +62,5 @@
                 @include('sidebar.sidebar')
             </div>
         </div>
-    </div>
-    <div>
-        {{ $items->links() }}
     </div>
 @endsection
