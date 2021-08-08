@@ -1,6 +1,6 @@
 <div class="row">
 @foreach($category_items as $category_item)
-    <div class="card col-sm-4">
+    <div class="card col-md-4">
         <div class="mt-2">
             <a href="{{ route('items.show', ['id'=>$category_item->id]) }}">
                 <img src="{{ Storage::disk('s3')->url($category_item->image_url) }}" alt="item-img" class="card-img-top">
