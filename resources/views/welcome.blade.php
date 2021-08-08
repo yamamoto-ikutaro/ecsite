@@ -8,27 +8,42 @@
       <h1 class="text-center mt-4 mb-4">商品一覧</h1>
 @endif
 
-<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-  <div class="carousel-inner" id="top_images">
-    <div class="carousel-item active">
-      <img class="d-block top-image" src="{{ asset('top_images/森風景.jpg') }}" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block top-image" src="{{ asset('top_images/田んぼ風景.jpg') }}" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block top-image" src="{{ asset('top_images/川風景.jpg') }}" alt="Third slide">
-    </div>
+<!--<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">-->
+<!--  <div class="carousel-inner" id="top_images">-->
+<!--    <div class="carousel-item active">-->
+<!--      <img class="d-block top-image" src="{{ asset('top_images/森風景.jpg') }}" alt="First slide">-->
+<!--    </div>-->
+<!--    <div class="carousel-item">-->
+<!--      <img class="d-block top-image" src="{{ asset('top_images/田んぼ風景.jpg') }}" alt="Second slide">-->
+<!--    </div>-->
+<!--    <div class="carousel-item">-->
+<!--      <img class="d-block top-image" src="{{ asset('top_images/川風景.jpg') }}" alt="Third slide">-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">-->
+<!--    <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--    <span class="sr-only">Previous</span>-->
+<!--  </a>-->
+<!--  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">-->
+<!--    <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--    <span class="sr-only">Next</span>-->
+<!--  </a>-->
+<!--</div>-->
+<section class="carousel">
+  <div class="image_container">
+    <ul id="img_list">
+      <li><img src="{{ asset('top_images/川風景.jpg') }}"></li>
+      <li><img src="{{ asset('top_images/田んぼ風景.jpg') }}"></li>
+      <li><img src="{{ asset('top_images/森風景.jpg') }}"></li>
+    </ul>
+    
+    <button id="prev">&laquo;</button>
+    <button id="next">&raquo;</button>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+  
+  <nav id="img_nav">
+  </nav>
+</section>
 
 @if(Auth::check())
     @if(Auth::user()->role == 'admin')

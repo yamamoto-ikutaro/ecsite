@@ -1,5 +1,59 @@
 body {
   background-color: #f0f8ff; }
+  body .carousel {
+    width: 80%;
+    margin: 16px auto; }
+  body .image_container {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative; }
+    body .image_container ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      transition: transform .5s; }
+      body .image_container ul li {
+        height: 100%;
+        min-width: 100%; }
+        body .image_container ul li img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+    body .image_container #prev, body .image_container #next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      font-size: 24px;
+      padding: 0 8px 8px;
+      cursor: pointer; }
+    body .image_container #prev:hover, body .image_container #next:hover {
+      opacity: .6; }
+    body .image_container #prev {
+      left: 0; }
+    body .image_container #next {
+      right: 0; }
+    body .image_container .hidden {
+      display: none; }
+  body nav#img_nav {
+    margin-top: 16px;
+    text-align: center; }
+    body nav#img_nav button + button {
+      margin-left: 8px; }
+    body nav#img_nav button {
+      border: none;
+      width: 16px;
+      height: 16px;
+      background: #ddd;
+      border-radius: 50%;
+      cursor: pointer; }
+    body nav#img_nav .current {
+      background: #999; }
   @media (min-width: 768px) {
     body .container .top-image {
       width: 90%;
@@ -40,10 +94,6 @@ body {
       padding-top: 5px; } }
 .shippingFee {
   border-bottom: solid 1px #808080; }
-
-.carousel-inner .carousel-item .top-image {
-  height: 380px;
-  object-fit: cover; }
 
 @media (max-width: 767px) {
   .card {
