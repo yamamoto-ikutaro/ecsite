@@ -32,9 +32,9 @@
 <section class="carousel">
   <div class="image_container">
     <ul id="img_list">
-      <li><img src="{{ asset('top_images/川風景.jpg') }}"></li>
-      <li><img src="{{ asset('top_images/田んぼ風景.jpg') }}"></li>
-      <li><img src="{{ asset('top_images/森風景.jpg') }}"></li>
+      <li><img src="{{ asset('top_images/果物.jpg') }}"></li>
+      <li><img src="{{ asset('top_images/野菜.jpg') }}"></li>
+      <li><img src="{{ asset('top_images/お米.jpg') }}"></li>
     </ul>
     
     <button id="prev">&laquo;</button>
