@@ -21,6 +21,3 @@
     </div>
 @endforeach
 </div>
-<div class="mt-3">
-    {{ $items->links() }}
-</div>
