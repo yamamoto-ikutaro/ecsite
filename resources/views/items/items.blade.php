@@ -6,7 +6,7 @@
                 <img src="{{ Storage::disk('s3')->url($item->image_url) }}" alt="item-img" class="card-img-top">
             </a>
         </div>
-        <div class="card-body pl-0 mt-5 pt-5">
+        <div class="card-body mt-5 pt-5">
             <div class="mt-2">
                 <p>商品名：{{ $item->item_title }}</p>
             </div>
@@ -21,6 +21,6 @@
     </div>
 @endforeach
 </div>
-<div>
+<div class="mt-3">
     {{ $items->links() }}
 </div>

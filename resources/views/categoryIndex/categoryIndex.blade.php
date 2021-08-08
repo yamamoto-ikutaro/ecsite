@@ -10,9 +10,9 @@
             <div class="col-md-4 sidebar">
                 @include('sidebar.sidebar')
             </div>
-            <div class="mt-3">
-                {{ $category_items->links() }}
-            </div>
         </div>
+    </div>
+    <div>
+        {{ $category_items->links() }}
     </div>
 @endsection
