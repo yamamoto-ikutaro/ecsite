@@ -55,12 +55,12 @@
             <div class="col-md-8">
                 @include('items.items')
             </div>
-            <div class="mt-3">
-                {{ $items->links() }}
-            </div>
             <div class="col-md-4 sidebar">
                 @include('sidebar.sidebar')
             </div>
         </div>
+    </div>
+    <div>
+        {{ $items->links() }}
     </div>
 @endsection
