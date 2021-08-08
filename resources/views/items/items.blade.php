@@ -21,3 +21,6 @@
     </div>
 @endforeach
 </div>
+<div>
+    {{ $items->links() }}
+</div>
