@@ -15,7 +15,6 @@
       <li><img src="{{ asset('top_images/野菜.jpg') }}"></li>
       <li><img src="{{ asset('top_images/お米.jpg') }}"></li>
     </ul>
-    
     <button id="prev">&laquo;</button>
     <button id="next">&raquo;</button>
   </div>

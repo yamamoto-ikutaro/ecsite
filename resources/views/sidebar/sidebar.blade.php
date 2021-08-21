@@ -4,10 +4,10 @@
     <div class = "form-group input-group">
       {!! Form::text('keyword', null, ['class'=>'form-control', 'placeholder'=>'キーワードを入力']) !!}
       {!! Form::button('<i class="fas fa-search"></i>', ['class' => "btn input-group-text", 'type' => 'submit']) !!}
-      @if($errors->first('keyword'))
-          <p class="text-danger">{{ $errors->first('keyword') }}</p>
-      @endif
     </div>
+    @if($errors->first('keyword'))
+        <p class="text-danger">{{ $errors->first('keyword') }}</p>
+    @endif
   {!! Form::close() !!}
 </div>
 
