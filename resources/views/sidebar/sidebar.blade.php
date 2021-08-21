@@ -12,12 +12,8 @@
 </div>
 
 <div class="dropdown open">
-  <button class="btn btn-secondary btn-block" type="button" id="dropdownMenu5" data-toggle="dropdown">
-    <div class="d-flex">
-        <div>カテゴリー一覧</div>
-    </div>
-  </button>
-  <ul class="list-unstyled col mt-4 list-group">
+  <p class="bg-secondary text-white text-left p-2 mb-0 rounded">カテゴリー一覧</p>
+  <ul class="list-unstyled col p-0 list-group">
     @foreach($categories as $category)
       <li class="category">{!! link_to_route('category.show', $category->category_name, [$category->id], ['class'=>'list-group-item text-secondary']) !!}</li>
     @endforeach
